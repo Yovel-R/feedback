@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Form Submission</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="padding">
+    <form id="form" class="formcon">
+      <div class="container">
+        <div class="entryarea">
+          <input type="text" id="name" name="name" placeholder=" " required>
+          <label for="name" class="label">Enter your Name</label>
+        </div>
+      </div>
+      <div class="container">
+        <div class="entryarea">
+          <input type="email" id="email" name="email" placeholder=" " required>
+          <label for="email" class="label">Enter your Email</label>
+        </div>
+      </div>
+      <div class="container">
+        <div class="entryarea">
+          <input type="date" id="dob" name="dob" placeholder=" " required>
+          <label for="dob" class="label">DOB</label>
+        </div>
+      </div>
+      <div class="container">
+        <div class="entryarea">
+          <textarea id="feedback" name="feedback" placeholder=" " required></textarea>
+          <label for="feedback" class="label">Write your command</label>
+        </div>
+      </div>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+  </body>
+</html>

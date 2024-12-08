@@ -1,0 +1,115 @@
+body {
+    background-image: url(back.png);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    transform: translate(0,-16%);
+}
+.padding{
+    margin-top: 9rem;
+    margin-bottom: 0;
+    padding-top: 0.1rem;
+    padding-right: 3.8rem;
+    padding-bottom: 1.8rem;
+    background-color: rgba(255, 255, 255, 0.526);
+    z-index: -1111;
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
+    
+}
+
+.container {
+    width: 20rem;
+    margin: 2rem;
+}
+
+.entryarea {
+    position: relative;
+    height: 80px;
+    line-height: 70px;
+}
+
+textarea,
+input {
+    height: 4rem;
+    position: absolute;
+    width: 100%;
+    outline: none;
+    font-size: 2.2rem;
+    padding: 0 30px;
+    line-height: 80px;
+    border: none;
+    border-bottom: 2px solid rgb(119, 208, 235);
+    background-color: none;
+    transition: all 0.3s ease;
+    z-index: 11;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.label {
+    position: absolute;
+    font-size: 1.2rem;
+    color: rgb(0, 0, 0);
+    padding: 0 25px;
+    margin: 0 -20px;
+    background-color: none;
+    transition: 0.3s ease;
+}
+
+textarea:focus,
+textarea:valid,
+input:focus,
+input:valid {
+    font-size: 1rem;
+    color: rgb(0, 0, 0);
+    border-bottom: 1px solid rgb(19, 199, 215);
+}
+
+textarea:focus + .label,
+textarea:not(:placeholder-shown) + .label,
+input:focus + .label,
+input:not(:placeholder-shown) + .label {
+    
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 20px;
+    color: rgb(19, 199, 215);
+    height: 30px;
+    line-height: 30px;
+    transform: translate(-10px, -30px) scale(0.88);
+    z-index: 1111;
+}
+textarea {
+    height: 8rem; /* Increase the height */
+    width: 21.5rem; /* Ensure it spans the full container width */
+    font-size: 1.8rem; /* Adjust the font size for better readability */
+    padding: 1rem; /* Add padding for better spacing inside the textarea */
+    border: 2px solid rgb(119, 208, 235);
+    border-radius: 10px;
+    background: white;
+    outline: none;
+    transition: all 0.3s ease;
+    z-index: -1;
+}
+
+
+button {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.6rem;
+    background-color: rgba(19, 199, 215, 0.8);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    transform: translate(7.5%,7rem);
+}
+
+button:hover {
+    background-color: rgba(19, 199, 215,0.9);
+    box-shadow: rgb(0, 179, 228) 0px 0px 50px;
+}
