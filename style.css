@@ -84,10 +84,10 @@ input:not(:placeholder-shown) + .label {
     z-index: 1111;
 }
 textarea {
-    height: 8rem; /* Increase the height */
-    width: 21.5rem; /* Ensure it spans the full container width */
-    font-size: 1.8rem; /* Adjust the font size for better readability */
-    padding: 1rem; /* Add padding for better spacing inside the textarea */
+    height: 8rem; 
+    width: 21.5rem; 
+    font-size: 1.8rem;
+    padding: 1rem; 
     border: 2px solid rgb(119, 208, 235);
     border-radius: 10px;
     background: white;
