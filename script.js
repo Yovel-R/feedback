@@ -4,7 +4,7 @@ document.getElementById("form").addEventListener("submit", (event) => {
     const formData = new FormData(event.target);
     const params = new URLSearchParams(formData);
   
-    fetch("https://script.google.com/macros/s/AKfycbwJIPm6OJ2Hf3H_fY-VUy3UgoyemtPx6p9VvUIodgdpYDv81D83Qzm9COBptnP7nahRuA/exec", {
+    fetch("https://script.google.com/macros/s/AKfycbxNxsUi8U03vYEutad8gINNDvgLTikIVnGgJShIKR-HvlcOB6SAoDlQZVeSfN07Fcje3A/exec", {
       method: "POST",
       body: params,
     })
